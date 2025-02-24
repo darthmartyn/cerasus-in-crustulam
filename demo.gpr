@@ -1,0 +1,10 @@
+project Demo is
+    Source_Directory := Project'Project_Dir;
+    for Languages use ("Ada");
+    for Source_Dirs use (Source_Directory);
+    for Source_Files use ("demo.adb");
+    for Main use ("demo.adb");
+    for Target use "morello-freebsd15";
+    for Object_Dir use "obj";
+    for Exec_Dir use external ("EXEDIR",".");
+end Demo;
